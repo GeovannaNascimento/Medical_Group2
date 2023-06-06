@@ -1,0 +1,136 @@
+*{
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .logo{
+    position: absolute;
+    z-index: 2;
+    left: 15%;
+    top: 4%;
+  }
+  
+  .titulo{
+    color: #3F4927;
+    right: 20%;
+    position: absolute;
+    top: 20%;
+    left: 9%;
+    z-index: 2;
+  }
+  
+  .rectangle {
+    width: 30rem;
+    height: 45.5rem;
+    background: #8D9277;
+    position: absolute;
+    top: -18%;
+    z-index: 1;
+   }
+  
+   .rectangle2{
+    width: 25rem;
+    height: 23rem;
+    background: #B8BF9A;
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    z-index: 2;
+   }
+  
+   .login{
+    position: absolute;
+    z-index: 3;
+    color: #ffffff;
+    left: 16%;
+    font-size: 140%;
+    top: 38%;
+   }
+  
+   .fundo{
+    position: absolute;
+    z-index: 0;
+    left: 25%;
+    top: -13%;
+    width: 50rem;
+  }
+  
+  .email{
+    position: absolute;
+    z-index: 3;
+    left: 7%;
+    top: 50%;
+    color: #8D9277;
+  }
+  
+  input[type="email"]{
+    width: 300px;
+    height: 30px;
+    background-color: #D9DDD7;
+    border-color: #D9DDD7;
+  }
+  
+  button{
+    position: absolute;
+    z-index: 3;
+    left: 16%;
+    top: 65%;
+    color: #FFFFFF;
+    height: 30px;
+    width: 65px;
+    background-color: #B79D7C;
+    border-radius: 5px;
+    border-color: #B79D7C;
+  }
+  
+  
+  .opções1{
+    position: absolute;
+    z-index: 3;
+    color: #3F4927;
+    left: 26%;
+    top: 77%;
+    font-size: 80%;
+  
+  }
+  
+  .opções2{
+    position: absolute;
+    z-index: 3;
+    color: #3F4927;
+    left: 26%;
+    top: 80%;
+    font-size: 80%;
+  }
+  
+  .opções3{
+    position: absolute;
+    z-index: 3;
+    color: #3F4927;
+    left: 7%;
+    top: 77%;
+    font-size: 80%;
+  }
+  
+  .opções4{
+    position: absolute;
+    z-index: 3;
+    left: 16.8%;
+    top: 84%;
+    color: #27226200;
+  }
+  
+  img[type="img"]{
+    position: absolute;
+    border-radius: 40px;
+  }
+  
+  p{
+    color: #272262;
+    font-size: 14pt;
+    text-align: center;
+    z-index: 3;
+  }
+  
+  body { overflow-y: hidden; }
+  body { overflow-x: hidden; }

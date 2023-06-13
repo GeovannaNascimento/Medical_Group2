@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./calendario.css">
+    <title>Consultas</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../img/Ajuda.png" class="ajuda">
+          </div>
+    </header>
+
+    <div class="rectangle"></div>
+    <div class="rectangle3"></div>
+    <div class="rectangle30"></div>
+
+    <div class="retangle1"></div>
+
+
+    
+  <div>
+    <img src="https://prodoctor.net/blog/wp-content/uploads/2020/03/como-melhorar-a-rela%C3%A7%C3%A3o-m%C3%A9dico-paciente.png-min-1280x720.jpg">
+  </div>
+
+  <div>
+    <img src="../img/casa.png" class="casa" onclick="Navegar()">
+  </div>
+
+  <div>
+    <img src="../img/user.png" class="user">
+  </div>
+
+
+   <h4 id="nome">Nome de usuário</h4>
+
+
+
+
+
+<div class="login">
+<h3>Marcar consulta</h3>
+
+</div>
+
+
+<div class="email">
+<input type="email" placeholder="Medico(a)" id="email">
+</div>
+
+<div class="cpf">
+<input type="number" placeholder="Data" id="cpf">
+</div>
+
+<div class="senha">
+<input type="password" placeholder="Senha" id="senha">
+</div>
+
+<div class="entrar">
+<button type="button" name="Entrar" id="entrar" onclick="Entrar()">Enviar</button>
+</div>
+
+
+
+
+
+<script>
+
+  var senha;
+
+  function Navegar(){
+    window.location.href="../html/InicioPaciente.html"
+  }
+</script>
+
+<script>
+  function Entrar() {
+
+var usuarios = [
+{"medico": "Cardiologista", "data": "13062023", "senha": "123"},
+
+];
+
+console.log(usuarios[0].medico);
+
+var medico = document.getElementById('usuarios').value;
+var senha = document.getElementById('senha').value;
+
+console.log(medico);
+console.log(senha);
+resultus=usuarios[0].medico;
+resultse=usuarios[0].senha;
+
+var usuarios;
+for (var usuarios in usuarios) {
+var usuarios = usuarios[usuarios];
+if (medico==resultus && senha==resultse ) {
+window.location.href="../html/InicioPaciente.html";
+return true;
+}
+}
+alert("Dados incorretos, tente novamente.");
+return false;
+}
+
+</script>
+
+
+</body>
+

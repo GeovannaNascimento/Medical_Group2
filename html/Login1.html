@@ -3,17 +3,15 @@
 
 <head>
 
-    <link rel="shortcut icon" href="../img/Capturar (2).PNG" type="image/x-icon" />
+    <link rel="shortcut icon" href="../img/Logo.PNG" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../css/Login1.css">
-    <title> Login Pacientes</title>
-    <script src="/js/login1.js"></script>
-
+    <title>SP Medical Group</title>
+</head>
 <body>
 
     <header>
         <div class="logo">
-            <img src="https://img.freepik.com/vetores-gratis/ilustracao-de-medico-icone_53876-6167.jpg" type="img"
-                height="80" width="80">
+            <img src="https://img.freepik.com/vetores-gratis/ilustracao-de-medico-icone_53876-6167.jpg" type="img" height="80" width="80">
         </div>
         <h1 class="titulo"> SP Medical Group </h1>
     </header>
@@ -30,7 +28,7 @@
         <img src="https://blog.imedicina.com.br/wp-content/uploads/2017/09/iStock-1136865476-1200x695.jpg">
     </div>
 
-    <div class="email">
+    <div class="email" >
         <input type="email" placeholder="Email" id="email">
     </div>
 
@@ -47,17 +45,59 @@
     </div>
 
     <div>
-        <a href="#" class="opções1">Não estou</a>
-        <a href="#" class="opções2">registrado</a>
-        <a href="../html/" class="opções3">Esqueci a senha</a>
+        <a href="../html/Cadastro.html" class="opções1">Não estou</a>
+        <a href="../html/Cadastro.html" class="opções2">registrado</a>
+        <a href="../html/SenhaPacientes.html" class="opções3">Esqueci a senha</a>
     </div>
 
     <a href="../Cadastro/Cadastro.html">
 
 </body>
 
-<!-- <script href="./login.js"></script> -->
- 
-</head>
+<script>
+
+
+
+
+var usuariosDB = [
+    { usuario: "macedolivia803@gmail.com", senha: "Lily_338512103" },
+    { usuario: "sngeovanna@gmail.com", senha: "123" },
+    { usuario: "ccarolinesilva23@gmail.com", senha: "123" },
+    { usuario: "isasilvasouzasilveira@gmail.com", senha: "8675" },
+];
+
+var usuarioValidar;
+var senhaValidar;
+
+function Entrar() {
+   
+
+    usuarioValidar = document.getElementById("email").value;
+    senhaValidar = document.getElementById("senha").value;
+
+    let usuarioAchado = usuariosDB.find(user => user.usuario === usuarioValidar)
+    let senhaAchada = usuariosDB.find(password => password.senha === senhaValidar)
+
+    console.log(usuarioAchado)
+
+    if (usuarioAchado == undefined && senhaAchada == undefined) {
+        
+        window.alert("Usuário ou senha incorretos.")
+    } else if (usuarioAchado == undefined) {
+        
+        window.alert("Usuário ou senha incorretos.")
+    } else if (senhaAchada == undefined) {
+       
+        window.alert("Usuário ou senha incorretos")
+    } else {
+        
+        window.alert("Login correto!")
+        window.location.assign("../html/InicioPaciente.html")
+    }
+}
+</script>
+
+
+
 
 </html>

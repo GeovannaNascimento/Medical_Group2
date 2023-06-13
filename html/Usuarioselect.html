@@ -2,31 +2,46 @@
 <html>
 
 <head>
-   <link rel="shortcut icon" href="../img/Capturar (2).PNG" type="image/x-icon" />
-   <title>Login</title>
+   <link rel="shortcut icon" href="../img/Logo.PNG" type="image/x-icon" />
+   <title>SP Medical Group</title>
    <link rel="stylesheet" type="text/css" href="../css/Usuarioselect.css">
 </head>
 
 <body>
    <header>
+
+      
+
       <div> <img src="https://img.freepik.com/vetores-gratis/ilustracao-de-medico-icone_53876-6167.jpg" type="img"
             class="logo" height="80" width="80">
-         <p>SP Medical group</p>
+         <p class="titulo">SP Medical group</p>
       </div>
    </header>
    <main>
       <div class="rectangle" type="rectangle">
          <h1 style="color: #3F4927;"> EU SOU...</h1>
          <div>
-            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTx4NfzT6HHUHfb141HDvcB3x3CzeG0nYPhGvv1sDsO7urJmPGw" type="img" id="usuario" type="button">
-               <p class="paciente" type="button" href="../html/Login1.html" href="../html/Login1.html">PACIENTE</p>
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTx4NfzT6HHUHfb141HDvcB3x3CzeG0nYPhGvv1sDsO7urJmPGw" type="img" id="usuario" type="button" onclick="Pacientes()">
+               <p class="paciente" type="button" href="../html/Login1.html" href="../html/Login1.html" onclick="Pacientes()">PACIENTE</p>
          </div>
          <div>
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTLRS96q-WvoUY-SmBghSPOk8_PYS_lMcpgn0Hlv2fo_fjdT2b" type="img" id="user">
-            <p class="funcionario" type="button" href="../html/Login2.html" onclick="Funcionario()">FUNCIONÁRIO</p>
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTLRS96q-WvoUY-SmBghSPOk8_PYS_lMcpgn0Hlv2fo_fjdT2b" type="img" id="user" onclick="Funcionarios()">
+            <p class="funcionario" type="button" href="../html/Login2.html" onclick="Funcionario()" onclick="Funcionarios()">FUNCIONÁRIO</p>
          </div>
       </div>
    </main>
 </body>
+
+<script>
+           function Pacientes() {
+            window.location.href = "../html/Login1.html";
+        }
+</script>
+
+<script>
+   function Funcionarios() {
+    window.location.href = "../html/Login2.html";
+}
+</script>
 
 </html>

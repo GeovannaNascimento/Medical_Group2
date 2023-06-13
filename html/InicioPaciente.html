@@ -2,88 +2,149 @@
 <html>
 
 <head>
+    <link rel="shortcut icon" href="../img/Logo.PNG" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../css/InicioPaciente.css">
-    <title>tela inicial</title>
+    <title>SP Medical Group</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-
 <body>
-
-    
 
     <header>
 
         <div>
-            <img src="https://img.freepik.com/vetores-gratis/ilustracao-de-medico-icone_53876-6167.jpg" alt=""
-                type="img" class="logo" height="80" width="80">
+            <img src="../img/Logo.PNG" alt="" type="img" class="logo" height="80" width="80">
+        </div>
+
+        <div>
+            <img src="../img/Ajuda.png" class="ajuda" onclick="Ajuda()">
+            <img src="../img/Logar.png" class="logar" onclick="Logar()">
+        </div>
+
+        <div>
+            <img src="" class="login">
         </div>
 
         <h1 class="titulo"> SP Medical Group </h1>
 
-        <p></p>
-
     </header>
 
-    <main>
+    <div class="rectangle"></div>
+    <div class="rectangle2"></div>
+    <div class="rectangle3"></div>
+    <div class="rectangle4"></div>
+    <div class="rectangle5"></div>]
+    <div class="rectangle6"></div>
+    <div class="rectangle7"></div>
+    <div class="rectangle8"></div>
+    <div class="rectangle9" id="contatos"></div>
+    <div class="rectangle10"></div>
 
-        <section>
+    <p class="alerta" > Em Breve . . . </p>
 
-
-            <div class="rectangle"></div>
-            <div class="rectangle3"></div>
-            <div class="rectangle4"></div>
-            <div class="rectangle32"></div>
-            <div class="rectangle33"></div>
-
-        </section>
-
-    </main>
-
-
-
-
-    <img src="https://static.wixstatic.com/media/f496b2_b481b7ecc96e4ae0bb75ec0ff2c8c355~mv2.jpg/v1/fill/w_1110,h_624,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f496b2_b481b7ecc96e4ae0bb75ec0ff2c8c355~mv2.jpg"
-        height="130" width="200">
-
-    <img src="https://www.cursosabeline.com.br/webroot/cur_cursos/curso-com-certificado-de-arteterapia-1566999122.jpg"
-        height="130" width="200">
-
-    <img src="https://s2.glbimg.com/6npXv1l9_5maO5E3GdBnebDg2j8=/0x0:2125x1411/924x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2017/07/04/istock-91829976.jpg"
-        height="130" width="200">
-
-
-
-
-    <p></p>
-
-    <div class="consultas">
-        <button onClick="adicionarFilme()">Consultas</button>
+    <div class="MenuBar">
+        <a href="#sobrenos" class="menu1">Sobre nós</a>
+        <a href="#contatos" class="menu2">Nossos contratos</a>
+        <a href="#ebooks" class="menu3">Ebooks</a>
     </div>
 
-    <div class="agendar">
-        <button onClick="adicionarFilme()">Agendar</button>
+    <hr>
+
+    <img src="../img/anuncio.png" class="anuncio" id="sobrenos">
+
+    <div>
+        <img src="../img/Consultas.png" class="icon1" onclick="Consultas()">
+        <img src="../img/Agendar.png" class="icon2" onclick="Calendario()">
+        <img src="../img/Planos_de_Saude.png" class="icon3" onclick="Erro()">
+        <img src="../img/Meu_Perfil.png" class="icon4" onclick="MeuPerfil()">
     </div>
 
-    <div class="planos">
-        <button onClick="adicionarFilme()">Planos de Saúde</button>
+    <div>
+        <p class="item1" onclick="Consultas()">Consultas</p>
+        <p class="item2" onclick="Calendario()">Agendar</p>
+        <p class="item3" onclick="Erro()">Planos de Saúde</p>
+        <p class="item4" onclick="MeuPerfil()">Meu Perfil</p>
     </div>
 
-    <div class="perfil">
-        <button onClick="adicionarFilme()">Meu perfil</button>
+    <p class="ebooks" id="ebooks">Nossos E-Books</p>
+
+    <div>
+        <img src="../img/Guia_de_Agendamentos.png" class="img1">
+        <img src="../img/Arte_Terapia.png" class="img2">
+        <img src="../img/Nutricao.png" class="img3">
+
+        <a href="#" class="ebook1">Guia de Agendamentos</a>
+        <a href="#" class="ebook2">Arte Terapia</a>
+        <a href="#" class="ebook3">Nutrição</a>
+
     </div>
 
-    <h1 id="logado"></h1>
+    <div>
+        <img src="../img/QR_Code.png" class="QRcode">
+        <p class="escrita1">Nos siga para receber dicas</p>
+        <p class="escrita2">importantantes para cuidar</p>
+        <p class="escrita3">cada vez melhor da sua saúde!</p>
+        <P class="escrita4">. . Faça parte . .</P>
+        <a class="escrita5" href="https://www.instagram.com/sp.medical.group/?igshid=MzNlNGNkZWQ4Mg%3D%3D">ACESSAR
+            INSTAGRAM</a>
 
-    
-    <button onclick="sair()">Sair</button>
+        <p class="escrita6">Nosso E-mail:</p>
+        <p class="escrita7">Telefone pra contato:</p>
+        <p class="escrita8" href="#">spmedicalgroup36@gmail.com</p>
+        <p class="escrita9" href="#">192</p>
 
-    <script src="./assets/js/index.js"></script>
+        <p class="margem1">┏━━━━━━━━━━━━━━━┓</p>
+        <p class="margem2">┗━━━━━━━━━━━━━━━┛</p>
 
+        <img src="../img/home.png" class="home">
+        <a class="escrita10" href="#">Voltar ao topo</a>
 
-  
+        <p class="SobreNos"> . . Sobre nós . . </p>
+        <p class="SobreNos2">Somos uma equipe que visa melhorar</p>
+        <p class="SobreNos3">cada vez mais a saúde de nossos pacientes,</p>
+        <p class="SobreNos4">trazendo melhorias, e atualizando nossos</p>
+        <p class="SobreNos5">equipamentos e recursos, conforme a </p>
+        <p class="SobreNos6">tecnologia vá evoluindo com o tempo.</p>
+
+    </div>
+
+    <script>
+        function Logar() {
+            window.location.href = "../html/Login1.html";
+        }
+    </script>
+
+    <script>
+        function Consultas() {
+            window.location.href = "../html/Consultas.html";
+        }
+    </script>
+
+    <script>
+        function Calendario() {
+            window.location.href = "../html/calendario.html";
+        }
+    </script>
+
+<script>
+    function PlanosDeSaude() {
+        window.location.href = "../html/calendario.html";
+    }
+</script>
+
+<script>
+    function MeuPerfil() {
+        window.location.href = "../html/MeuPerfil.html";
+    }
+</script>
+
+<script>
+    function Erro() {
+        window.location.href = "../html/Erro.html";
+    }
+</script>
 
 </body>
 

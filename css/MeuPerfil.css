@@ -1,0 +1,249 @@
+*{padding: 0;
+    margin: 0;
+    font-family: Helvetica;}
+
+
+
+body{
+     background-color: #D9DDD7;
+     z-index: 1;
+}
+  
+
+
+.rectangle {
+    width: 80rem;
+    height: 7.2rem;
+    background: #8D9277;
+    position: absolute;
+    top: 10;
+    z-index: 2;
+}
+  
+
+.rectangle3{
+     width: 80rem;
+     height: 0.3rem;
+     background: #8D9277;
+     left: 0%;
+     top: 20%;
+     position: absolute;
+     z-index: 2;
+  
+}
+
+.rectangle30{
+    width: 20rem;
+    height: 25rem;
+    background: #C6CAC9;
+    left: 8%;
+    top: 28%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 1%;
+    opacity: 0.8;
+ 
+}
+
+.rectangle31{
+  width: 20rem;
+  height: 25rem;
+  background: #C6CAC9;
+  left: 37.5%;
+  top: 28%;
+  position: absolute;
+  z-index: 2;
+  border-radius: 1%;
+  opacity: 0.8;
+
+}
+
+.rectangle32{
+  width: 20rem;
+  height: 25rem;
+  background: #C6CAC9;
+  left: 67%;
+  top: 28%;
+  position: absolute;
+  z-index: 2;
+  border-radius: 1%;
+  opacity: 0.8;
+
+}
+
+
+.rectangle100{
+  width: 13rem;
+  height: 13rem;
+  background: #EF8972;
+  left: 71%;
+  top: 35%;
+  position: absolute;
+  z-index: 2;
+  border-radius: 100%;
+  opacity: 0.8;
+
+}
+
+.rectangle99{
+  width: 13rem;
+  height: 13rem;
+  background: #ef8972a4;
+  left: 71%;
+  top: 35%;
+  position: absolute;
+  z-index: 2;
+  border-radius: 100%;
+  opacity: 0.8;
+
+}
+
+.rectangle100{
+  width: 13rem;
+  height: 13rem;
+  background: #ef8972a4;
+  left: 42%;
+  top: 35%;
+  position: absolute;
+  z-index: 2;
+  border-radius: 100%;
+  opacity: 0.8;
+
+}
+
+
+.rectangle98{
+  width: 13rem;
+  height: 13rem;
+  background: #ef8972a4;
+  left: 12%;
+  top: 35%;
+  position: absolute;
+  z-index: 2;
+  border-radius: 100%;
+  opacity: 0.8;
+
+}
+
+
+.cartao{
+  width: 9rem;
+  height: 9rem;
+  left: 14.2%;
+  top: 39%;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.8;
+
+}
+
+
+.one{
+  left: 11.8%;
+  top: 73%;
+  position: absolute;
+  z-index: 8;
+  color: #ffffff;
+
+}
+
+
+.two{
+  left: 45%;
+  top: 73%;
+  position: absolute;
+  z-index: 8;
+  color: #ffffff;
+
+}
+
+
+.three{
+  left: 70%;
+  top: 73%;
+  position: absolute;
+  z-index: 8;
+  color: #ffffff;
+
+}
+
+
+.config{
+  width: 9rem;
+  height: 9rem;
+  left: 44.5%;
+  top: 39.5%;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.8;
+
+}
+
+.config2{
+  width: 12rem;
+  height: 12rem;
+  left: 72%;
+  top: 35%;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.8;
+
+}
+
+
+.ajuda{
+    position: absolute;
+    width: 3%;
+    top: 4.5%;
+    left: 95%;
+    z-index: 3;
+    }
+
+.casa{
+  position: absolute;
+  width: 3%;
+  top: 4.5%;
+  left: 90%;
+  z-index: 3;
+}
+
+.casa{
+     position: absolute;
+     width: 3%;
+     top: 4.5%;
+     left: 90%;
+     z-index: 3;
+}
+
+
+.user{
+ position: absolute;
+ width: 9%;
+ top: 0.2%;
+ left: 2%;
+ z-index: 3;
+}
+
+
+#nome {
+ position: absolute;
+  width: 20%;
+   top: 5%;
+   left: 12%;
+   z-index: 8;
+  color: #ffffff;
+}
+
+
+
+
+     
+
+
+
+
+
+
+
+  body { overflow-y: hidden; }
+  body { overflow-x: hidden; }

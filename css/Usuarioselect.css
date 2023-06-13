@@ -37,7 +37,7 @@ background-color: #D9DDD7;
     background: #8D9277;
     position: absolute;
     top: 15%;
-    left: 15%;
+    left: 11%;
     z-index: 1;
     border-radius: 15px;
 }
@@ -52,7 +52,9 @@ p{
 }
 h1{
     color: #3F4927;
-    text-align: center;
+    top: 10%;
+    left: 44%;
+    position: absolute;
 }
 
 .paciente{
@@ -66,3 +68,14 @@ h1{
     left: 9.4%;
     top: 78%;
 }
+
+.rectangle2{
+    color: black;
+    width: 20%;
+    height: 1%;
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    z-index: 2;
+}
+

@@ -1,0 +1,63 @@
+body {
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 5px ;
+    background-color: #8D9277;
+
+
+}
+     
+.erro {
+     font-size: 36px;
+        color: #3F4927;
+        padding: 20px 0;
+        text-align: right;
+        left: 42.5%;
+        top: 1%;
+        font-family:serif;
+        position: absolute;
+}
+
+
+.nao{
+        font-size: 20px;
+        color: #3F4927;
+        left:38.5%;
+        top:20%;
+        position: absolute;
+
+}
+
+
+.teste {
+        font-size: 18px;
+        text-align:center;
+        color: #e8ebe1;
+        width: 500px;
+        border: 1px solid ;
+        border-color: #e8ebe1;
+        font-family: serif;
+        left: 29%;
+        position: absolute;
+        top: 60%;
+}
+
+
+.img {
+        margin: 0 auto;
+        top: 30%;
+        left:38%;
+        position: absolute;
+}
+
+
+.casa{
+    position: absolute;
+    width: 3%;
+    top: 80%;
+    left: 47%;
+    z-index: 3;
+    background-color: #7d8960;
+    border-radius: 10%;
+ }

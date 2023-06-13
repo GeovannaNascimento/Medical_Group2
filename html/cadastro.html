@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <link rel="stylesheet" type="text/css" href="cadastrobom.css">
+        <title>Cadastre-se!</title>
+        <body>
+
+
+            <header>
+                <div class="logo">
+                    <img src="https://img.freepik.com/vetores-gratis/ilustracao-de-medico-icone_53876-6167.jpg" type="img" height="80" width="80">                    
+                </div>
+                <h1 class="titulo"> SP Medical Group </h1>
+            </header>
+
+
+            <div class="rectangle"></div>
+            <div class="rectangle2"></div>
+
+
+            <div class="login">
+                <h3 id="title">Cadastre-se</h3>
+           
+            </div>
+
+
+            <div class="fundo">
+                <img src="https://blog.imedicina.com.br/wp-content/uploads/2017/09/iStock-1136865476-1200x695.jpg" height="765">
+            </div>
+           
+            <div class="email">
+                <input type="email" placeholder="Email" id="nome">
+            </div>
+
+
+            <div class="cpf">
+                <input type="password" placeholder="CPF" id="usuario">
+            </div>
+
+
+            <div class="senha">
+                <input type="password" placeholder="Senha" id="senha">
+            </div>
+
+            <div class="confirmarsenha">
+                <input type="password" placeholder="Confirmar Senha" id="confirmsenha">
+            </div>
+
+
+
+            <div class="cadastrar">
+                <input type="button" name="Cadastrar" value="Cadastrar" id="cadastrar" onclick="cadastrar()">
+
+            </div>
+
+            <a href="./login.html" id="coisa" class="cadastrar">Cadastrar</a>
+
+            <div id="input">
+                <input type="gmail" id="gmail" placeholder="Gmail" />
+                <input type="senha" id="senha" placeholder="Senha" />
+                <input type="entrar" id="entrar" value="Log In" onclick="login()">
+                </div>
+
+
+
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+
+function handleFormSubmit(event) {
+  event.preventDefault(); 
+
+  
+  const email = document.getElementById('email').value;
+  const cpf = document.getElementById('cpf').value;
+  const senha = document.getElementById('senha').value;
+  const confirmarSenha = document.getElementById('confirmarSenha').value;
+
+
+  if (senha !== confirmarSenha) {
+    alert('As senhas não coincidem. Por favor, tente novamente.');
+    return;
+  }
+
+
+  const usuario = {
+    email: email,
+    cpf: cpf,
+    senha: senha
+  };
+
+
+
+  
+  const usuarios = getUsersFromDatabase();
+  usuarios.push(usuario);
+  saveUsersToDatabase(usuarios);
+
+
+  alert('Cadastro realizado com sucesso!');
+  document.getElementById('cadastroForm').reset();
+}
+
+
+function getUsersFromDatabase() {
+  const usuariosJSON = localStorage.getItem('usuarios');
+  return usuariosJSON ? JSON.parse(usuariosJSON) : [];
+}
+
+
+function saveUsersToDatabase(usuarios) {
+  const usuariosJSON = JSON.stringify(usuarios);
+  localStorage.setItem('usuarios', usuariosJSON);
+}
+
+
+const form = document.getElementById('cadastroForm');
+form.addEventListener('submit', handleFormSubmit);
+
+ const usuario {
+
+ const email: juliocom@gmail.com;, 
+ const cpf: 12345654321,
+const senha: Juliodococorico,
+ const confirmarSenha: Juliodococorico;
+
+}
+  </script>
+        
+        </body>
+    </head>
+
+</html>

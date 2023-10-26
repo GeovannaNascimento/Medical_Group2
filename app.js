@@ -1,10 +1,12 @@
 const express = require('express');
-const mysql = require('mysql2');
-const ejs = require('ejs');
 const bodyParser = require('body-parser');
-
+const cors = require('cors');
+const mysql = require('mysql2');
 const app = express();
-const port = 3000;
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 
 const db = mysql.createConnection({
   host: 'localhost',
@@ -14,55 +16,38 @@ const db = mysql.createConnection({
 });
 
 db.connect((err) => {
-  if (err) throw err;
-  console.log('Connected to MySQL');
+  if (err) {
+    console.error('Erro ao conectar ao banco de dados:', err);
+  } else {
+    console.log('Conectado ao banco de dados');
+  }
 });
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public'));
-app.set('view engine', 'ejs');
+app.get('/index', (req, res) => {
+  res.render('pages/index');
+});
 
+app.post('/index', (req, res) => {
+  const data = req.body.data;
+  const senha = req.body.senha;
 
+  if (!medico || !data || !senha) {
+    return res.status(400).json({ error: 'Campos incompletos' });
+  }
 
-// READ
-app.get('/', (req, res) => {
-  db.query('SELECT * FROM users', (err, result) => {
-    if (err) throw err;
-    res.render('index', { users: result });
+  const consulta = { medico, data, senha };
+  db.query('INSERT INTO consultas SET ?', consulta, (err, results) => {
+    if (err) {
+      console.error('Erro ao inserir no banco de dados:', err);
+      return res.status(500).json({ error: 'Erro no servidor' });
+    }
+    res.json({ message: 'Pedido de agendamento enviado' });
   });
 });
 
-// CREATE
-app.post('/add', (req, res) => {
-  const { name, email } = req.body;
-  const sql = 'INSERT INTO users (name, email) VALUES (?, ?)';
-  db.query(sql, [name, email], (err, result) => {
-    if (err) throw err;
-    res.redirect('/');
-  });
-});
-
-// UPDATE
-app.post('/update/:id', (req, res) => {
-  const { id } = req.params;
-  const { name, email } = req.body;
-  const sql = 'UPDATE users SET name = ?, email = ? WHERE id = ?';
-  db.query(sql, [name, email, id], (err, result) => {
-    if (err) throw err;
-    res.redirect('/');
-  });
-});
-
-// DELETE
-app.get('/delete/:id', (req, res) => {
-  const { id } = req.params;
-  const sql = 'DELETE FROM users WHERE id = ?';
-  db.query(sql, [id], (err, result) => {
-    if (err) throw err;
-    res.redirect('/');
-  });
-});
-
+const port = 3000;
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Servidor rodando na porta ${port}`);
 });
+
+

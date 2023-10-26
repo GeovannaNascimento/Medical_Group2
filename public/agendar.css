@@ -132,12 +132,11 @@ button:hover {
   z-index: 3;
 }
 
-
 .voltar {
   position: absolute;
-  width: 18%;
-  left: 75%;
-  top: 3%;
+  width: 3.3%;
+  left: 88%;
+  top: 2.9%;
   z-index: 3;
 }
 
@@ -145,3 +144,6 @@ img[type="img"] {
   border-radius: 40px;
   position: absolute;
 }
+
+body { overflow-y: hidden; }
+body { overflow-x: hidden; }

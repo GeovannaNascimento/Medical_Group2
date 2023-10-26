@@ -220,14 +220,14 @@
   position: absolute;
   left: 93%;
   top: 3%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .logout {
   position: absolute;
   left: 88%;
   top: 3%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .text1 {
@@ -431,3 +431,5 @@
   top: 207%;
   z-index: 0;
 }
+
+body { overflow-x: hidden; }
